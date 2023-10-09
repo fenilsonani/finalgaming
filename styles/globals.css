@@ -2,26 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.bg-image {
+    background: url("../public/img/banner-game.jpg") center center;
+    background-size: cover;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-update {
+    background: url("../public/img/IMAGE_UPT.png");
+    background-size: cover;
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.opactiy-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.opactiy-bg-dark {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.bg-seasion {
+    background: url("../public/img/season-pass.png");
+    background-size: cover;
+}
+
+.bg-contactus {
+    background: url("../public/img/contact_img.png");
+    background-size: cover;
+}
+
+.bg-hello {
+    background: url("../public/img/key-board.png");
+    background-size: cover;
+}
+
+.bgtarnpant {
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.bg-main-baner {
+    background: url("../public/img/land_back_image.png") center center;
+    background-size: cover;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f2f2f2;
+    transition: width .3s;
+    width: 100%;
+}
+
+/* .cool-link:hover::after {
+
+
+} */
+.bg-gun {
+    background: url("../public/img/Rectangle 25.png");
+    background-size: cover;
+}
+
+.t-c {
+    box-align: center;
+
+}
+
+* {
+    box-sizing: border-box;
 }
