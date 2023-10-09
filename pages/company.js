@@ -23,3 +23,5 @@ const company = () => {
         </div>
     )
 }
+
+export default company

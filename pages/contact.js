@@ -7,3 +7,5 @@ const contact = () => {
         </div>
     )
 }
+
+export default contact
