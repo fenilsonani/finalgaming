@@ -21,16 +21,16 @@ function Solution() {
         ]
     )
   return (
-    <div className='w-full py-10 bg-[#f2f2f2]'>
+    <div className='w-full py-10'>
       <div className="container mx-auto px-2 md:px-0">
         <h2 className='text-center text-[#414141] text-2xl font-semibold py-2'>Modern Solutions we Provide</h2>
         <p className='text-center font-thin'>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent.</p>
-        <div className='flex flex-wrap justify-evenly py-5'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-5 py-5'>
             {
                 soultionData.map(
                     (data, index) =>{
                         return(
-                            <div className='w-full md:w-[25%] bg-white border-2 rounded py-5 px-2 mb-2 md:mb-0'
+                            <div className='w-full bg-white border-2 rounded py-5 px-2 mb-2 md:mb-0'
                                  key={index}
                             >
                                 <img src={data.icon} alt={data.icon} className='mx-auto' />

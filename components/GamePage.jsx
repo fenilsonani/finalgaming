@@ -215,18 +215,15 @@ function GamePage() {
             {/*                            className='text-[20px]'>5</span></h3>*/}
             {/*                        <p>3 answerd</p>*/}
             {/*                        <p>5 not answerd</p>*/}
-
             {/*                    </div>*/}
             {/*                    <div className='text-center'>*/}
             {/*                        <button type="button"*/}
             {/*                                className="bg-[#171717] text-[#CFCFCF] focus:ring-4 focus:ring-blue-300 font-medium block mx-auto  text-sm px-5 py-1  dark:bg-blue-600 dark:hover:bg-[#CFCFCF] focus:outline-none dark:focus:ring-blue-800">Submit*/}
             {/*                        </button>*/}
-
             {/*                    </div>*/}
             {/*                </div>*/}
             {/*            </div>*/}
             {/*        </div>*/}
-
             {/*    </div>*/}
             {/*</div>*/}
         </>

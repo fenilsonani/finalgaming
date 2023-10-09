@@ -9,8 +9,8 @@ function Review() {
                         <img src="img/review_1.png" alt="" className='mx-auto' />
                     </div>
                     <div className='w-full md:w-[70%]'>
-                        <div className='flex justify-between items-start pr-8 py-5'>
-                            <div>
+                        <div className='flex justify-between flex-col md:flex-row items-center md:items-start gap-5 md:gap-0 pr-8 py-5'>
+                            <div className='flex flex-col items-center'>
                                 <h3>Steve Cabanillas</h3>
                                 <p className='font-thin text-[#979797]'>Lenevo Group, UK</p>
                             </div>

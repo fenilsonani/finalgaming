@@ -26,7 +26,7 @@ function Workplace() {
         ]
     )
   return (
-    <div className='w-full py-10'>
+    <div className='w-full py-10 bg-gray-50'>
       <div className='container mx-auto'>
         <h2 className='text-center text-[#414141] font-bold text-2xl'>Making a awesome workplace working with us</h2>
         <p className='text-center font-thin'>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis</p>
@@ -34,7 +34,7 @@ function Workplace() {
                 {
                   workingData.map( (data,index)=> {
                     return(
-                        <div className='w-full md:w-[40%] mb-5' key={index}>
+                        <div className='w-[400px] border-2 mb-5 py-10 mx-10 px-10 rounded-lg' key={index}>
                           <img src={data.img} alt={data.img} className='mx-auto' />
                           <h3 className='text-center font-bold'>{data.titile}</h3>
                           <p className='text-center font-thin'>{data.subHeding}</p>

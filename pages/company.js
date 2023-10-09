@@ -12,13 +12,15 @@ const company = () => {
     return (
         <div>
             <Banner/>
-            <Counter/>
-            <Truseted/>
-            <About_Us/>
-            <Solution/>
-            <Our_Motto/>
-            <Workplace/>
-            <Review/>
+            <div className="mx-10">
+                <Counter/>
+                <Truseted/>
+                <About_Us/>
+                <Solution/>
+                <Our_Motto/>
+                <Workplace/>
+                <Review/>
+            </div>
             <Footer/>
         </div>
     )
