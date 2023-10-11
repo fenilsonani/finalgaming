@@ -201,7 +201,7 @@ function GamePage() {
                             <img src="img/logo512.png" className="h-8 mr-3" alt="Flowbite Logo"/>
                             <h3 className="self-center tracking-[0.5rem]  text-sm font-semibold whitespace-nowrap text-white">CHIMERA</h3>
                         </div>
-                        <div className='flex gap-4 items-center'>
+                        <div className='flex gap-2 md:gap-4 items-center'>
                             <img src="img/global.png" alt="global"/>
                             <h3 className='text-white text-sm'>ENGLISH (ASIA)</h3>
                             <img src="img/drop-down.png" alt="dropdown"/>

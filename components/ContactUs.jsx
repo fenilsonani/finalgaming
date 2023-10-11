@@ -30,6 +30,7 @@ function ContactUs() {
 
             console.log('Response:', response.data);
             alert("Form Submitted Successfully")
+            window.location.href = "/"
 
         } catch (e) {
             alert("Alert Occur While Submitting Form")
@@ -49,7 +50,7 @@ function ContactUs() {
                         <div className={``}>
                             <label htmlFor="name"
                                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
-                            <input type="name" id="name"
+                            <input type="text" id="name"
                                    value={name}
                                    onChange={(e) => setName(e.target.value)}
                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -61,7 +62,7 @@ function ContactUs() {
                                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                                 Highest Qualification
                             </label>
-                            <input type="qualification" id="qualification"
+                            <input type="text" id="qualification"
                                    value={qualification}
                                    onChange={(e) => setQualification(e.target.value)}
                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -70,7 +71,7 @@ function ContactUs() {
                         <div className={``}>
                             <label htmlFor="location"
                                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Location</label>
-                            <input type="location" id="location"
+                            <input type="text" id="location"
                                    value={location}
                                    onChange={(e) => setLocation(e.target.value)}
                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -80,7 +81,7 @@ function ContactUs() {
                             <label htmlFor="last_name"
                                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last
                                 Name</label>
-                            <input type="last_name" id="last_name"
+                            <input type="text" id="last_name"
                                    value={last_name}
                                    onChange={(e) => setLast_name(e.target.value)}
                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -99,7 +100,7 @@ function ContactUs() {
                             <label htmlFor="phone_no"
                                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone
                                 No</label>
-                            <input type="phone_no" id="phone_no"
+                            <input type="number" id="phone_no"
                                    value={phone_no}
                                    onChange={(e) => setPhone_no(e.target.value)}
                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
