@@ -41,6 +41,7 @@ function GamePage() {
         //     set the if the 80% answers are correct then only then set the Cookie and localstorage page allowed = 2
         await Cookies.set('pageAllowed', "2");
         await localStorage.setItem('pageAllowed', "2");
+        window.location.href = "/company";
     };
     const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(0);
     // const currentQuestion = data.questions[currentQuestionIndex];

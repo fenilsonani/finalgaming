@@ -51,6 +51,7 @@ function Hello() {
         //     set the if the 80% answers are correct then only then set the Cookie and localstorage page allowed = 2
         await Cookies.set('pageAllowed', "4");
         await localStorage.setItem('pageAllowed', "4");
+        window.location.href = "/contactsecond";
     };
     const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(0);
     const [currentQuestion, setCurrentQuestion] = React.useState({});
