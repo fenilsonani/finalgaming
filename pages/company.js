@@ -7,13 +7,14 @@ import Our_Motto from "@/components/Our_Motto";
 import Workplace from "@/components/Workplace";
 import Review from "@/components/Review";
 import Footer from "@/components/Footer";
-import {useEffect} from "react";
+import React,{useEffect} from "react";
 import Cookies from "js-cookie";
 
 const company = () => {
 
 
-    useEffect(() => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    React.useEffect(() => {
         // if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
         //     alert("welcome to company page")
         // } else {

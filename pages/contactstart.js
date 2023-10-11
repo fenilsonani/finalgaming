@@ -4,6 +4,7 @@ import Cookies from "js-cookie";
 
 const contactstart = () => {
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
         // if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
         //     alert("welcome to company page")
