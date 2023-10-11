@@ -1,4 +1,5 @@
 import ContactUs from "@/components/ContactUs";
+import Navbar from "@/components/Core/Navbar";
 
 const contact = () => {
     return (

@@ -8,6 +8,8 @@ function ContactUs() {
             <div className='w-full py-10 bg-["img/contact_us_from.png"] bg-no-repeat bg-right-bottom bg-contain'>
                 <div className="container mx-auto px-2">
                     {/*<All_From />*/}
+                    <h1 className='text-3xl font-base text-center mb-10'>Please Fill out the details</h1>
+                    <p className={"text-center text-sm font-thin mb-10"}>Lorem ipsum dolor sit amet, consectetur</p>
                     <div className='grid grid-cols-1 px-10 md:grid-cols-2 gap-5 md:gap-10 z-50'>
                         <div className={``}>
                             <label htmlFor="name"
