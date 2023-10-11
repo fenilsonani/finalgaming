@@ -22,7 +22,7 @@ function ContactUs() {
             formData.append('email', email);
             formData.append('phone', phone_no);
 
-            const response = await axios.post('http://localhost:3000/candidate/add', formData, {
+            const response = await axios.post('https://chimera-admin.vercel.app/candidate/add', formData, {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },

@@ -37,7 +37,7 @@ function GamePage() {
                 }
             }
         });
-        alert(`Correct Answers: ${correctAnswers}\nWrong Answers: ${wrongAnswers}\nNot Answered: ${notAnswered}`)
+        // alert(`Correct Answers: ${correctAnswers}\nWrong Answers: ${wrongAnswers}\nNot Answered: ${notAnswered}`)
         //     set the if the 80% answers are correct then only then set the Cookie and localstorage page allowed = 2
         await Cookies.set('pageAllowed', "2");
         await localStorage.setItem('pageAllowed', "2");
@@ -180,7 +180,7 @@ function GamePage() {
 
     useEffect(() => {
         setdialogContent("first")
-        axios.get("http://localhost:3000/admin/AllquestionSet")
+        axios.get("https://chimera-admin.vercel.app/admin/AllquestionSet")
             .then((res) => {
                 console.log("res", res.data);
                 setData(res.data);

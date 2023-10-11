@@ -10,7 +10,7 @@ function Hello() {
 
     useEffect(() => {
         setdialogContent("first")
-        axios.get("http://localhost:3000/admin/AllquestionSet")
+        axios.get("https://chimera-admin.vercel.app/admin/AllquestionSet")
             .then((res) => {
                 console.log("res", res.data);
                 setData(res.data);
