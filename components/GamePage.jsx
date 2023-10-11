@@ -83,10 +83,8 @@ function GamePage() {
                 let answerIndex = parseInt(userAnswers[question._id]);
                 if (answerIndex === userAnswers[question._id]) {
                     correctAnswers++;
-                    // alert("Correct Answer")
                 } else {
                     wrongAnswers++;
-                    // alert("Wrong Answer")
                 }
             }
         });
