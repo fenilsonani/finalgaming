@@ -193,7 +193,7 @@ function GamePage() {
 
     return (
         <>
-            <div className='w-full bg-image h-[90vh]'>
+            <div className='w-full bg-[url("../public/img/banner-game.jpg")] h-[90vh]'>
                 <div className="container mx-auto">
                     <div className='flex py-5 justify-between'>
                         <div className='flex gap-3'>
@@ -210,10 +210,6 @@ function GamePage() {
                         <img src="img/lets-be.png" alt="text-banner" className='mx-auto max-w-[100%]'/>
                         <Dialog>
                             <DialogTrigger>
-                                {/*<button*/}
-                                {/*    className='text-white mx-auto text-xl  font-["Orbitron",sans-serif] bg-[#64646436] py-3 px-6 border-2 border-[#f2f2f2]'>Know*/}
-                                {/*    More*/}
-                                {/*</button>*/}
                                 <img src="/knowmore.svg" alt="know-more" className='mx-auto'/>
                             </DialogTrigger>
                             <DialogContent>

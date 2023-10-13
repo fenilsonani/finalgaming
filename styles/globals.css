@@ -3,15 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-image {
-    background: url("../public/img/banner-game.jpg") center center;
-    background-size: cover;
-}
+/*.bg-image {*/
+/*    background: url("../public/img/banner-game.jpg") center center;*/
+/*    background-size: cover;*/
+/*}*/
 
 .bg-update {
     background: url("../public/img/IMAGE_UPT.png");
     background-size: cover;
-
 }
 
 .opactiy-bg {
