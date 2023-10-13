@@ -9,7 +9,7 @@
 /*}*/
 
 .bg-update {
-    background: url("../public/img/IMAGE_UPT.png");
+    background: url("/img/IMAGE_UPT.png");
     background-size: cover;
 }
 
@@ -26,17 +26,17 @@
 }
 
 .bg-seasion {
-    background: url("../public/img/season-pass.png");
+    background: url("/img/season-pass.png");
     background-size: cover;
 }
 
 .bg-contactus {
-    background: url("../public/img/contact_img.png");
+    background: url("/img/contact_img.png");
     background-size: cover;
 }
 
 .bg-hello {
-    background: url("../public/img/key-board.png");
+    background: url("/img/key-board.png");
     background-size: cover;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .bg-main-baner {
-    background: url("../public/img/land_back_image.png") center center;
+    background: url("/img/land_back_image.png") center center;
     background-size: cover;
 }
 
