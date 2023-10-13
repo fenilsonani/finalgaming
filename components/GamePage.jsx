@@ -169,7 +169,7 @@ function GamePage() {
                                     setdialogContent("second")
                                 }}
                         >
-                            Submit
+                            Start Now
                         </button>
                     </div>
                 </div>

@@ -51,7 +51,8 @@ function Upadategame() {
                     {/*        </div>*/}
                     {/*    </div>*/}
                     {/*</div>*/}
-                    <img src={"/newupdate.svg"} alt="" className='w-full mt-5 mx-auto font-[Orbitron,sans-serif] text-white font-bold text-2xl'/>
+                    <img src={"/newupdate.svg"} alt="" className='w-full hidden md:block mt-5 mx-auto font-[Orbitron,sans-serif] text-white font-bold text-2xl'/>
+                    <img src={"/updatemobile.svg"} alt="" className='w-3/4 block md:hidden mt-5 mx-auto font-[Orbitron,sans-serif] text-white font-bold text-2xl'/>
                 </div>
             </div>
         </div>
