@@ -40,7 +40,6 @@ function Upadategame() {
                     {/*            <div className='self-center flex items-center justify-center bg-gun w-[40%]'>*/}
                     {/*                <img src="img/image 59.png" alt=""/>*/}
                     {/*            </div>*/}
-
                     {/*            <div className='w-[60%]'>*/}
                     {/*                <p className='text-white text-sm font-["Orbitron",sans-serif] text-justify'>Newly*/}
                     {/*                    updated map with morel loots and increased the game rendering performance. Newly*/}
