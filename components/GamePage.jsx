@@ -193,7 +193,7 @@ function GamePage() {
 
     return (
         <>
-            <div className='w-full bg-[url("../public/img/banner-game.jpg")] h-[90vh]'>
+            <div className='w-full bg-[url("/img/banner-game.jpg")] bg-cover bg-no-repeat h-[90vh]'>
                 <div className="container mx-auto">
                     <div className='flex py-5 justify-between'>
                         <div className='flex gap-3'>
