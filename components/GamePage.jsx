@@ -226,7 +226,7 @@ function GamePage() {
                 <div className="container mx-auto">
                     <div className='flex py-5 justify-between'>
                         <div className='flex gap-3'>
-                            <img src="img/logo512.png" className="h-8 mr-3" alt="Flowbite Logo"/>
+                            <img src="img/logo512.png" className="h-8 mr-3" alt="logo"/>
                             <h3 className="self-center tracking-[0.5rem]  text-sm font-semibold whitespace-nowrap text-white">CHIMERA</h3>
                         </div>
                         <div className='flex gap-2 md:gap-4 items-center'>
@@ -236,7 +236,8 @@ function GamePage() {
                         </div>
                     </div>
                     <div className='flex h-[80vh] flex-col justify-between items-center py-5'>
-                        <img src="img/lets-be.png" alt="text-banner" className='mx-auto max-w-[100%]'/>
+                        <img src="img/lets-be.png" alt="text-banner" className='mx-auto hidden md:block max-w-[100%]'/>
+                        <img src="lets.svg" alt="text-banner" className=' self-start block md:hidden w-5/6'/>
                         <Dialog>
                             <DialogTrigger>
                                 <img src="/knowmore.svg" alt="know-more" className='mx-auto'/>
