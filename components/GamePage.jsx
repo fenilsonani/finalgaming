@@ -145,6 +145,12 @@ function GamePage() {
                             </button>
                         }
                     </div>
+                    <div className={"flex flex-col justify-center items-center"}>
+                        <button type="button"
+                                onClick={checkAnswers}
+                                className="bg-[#171717] text-[#CFCFCF] focus:ring-4 focus:ring-blue-300 font-medium block mx-auto  text-sm px-5 py-1  dark:bg-blue-600 dark:hover:bg-[#CFCFCF] focus:outline-none dark:focus:ring-blue-800">Submit
+                        </button>
+                    </div>
                 </div>
                 <div className='w-[25%] border-l-2 hidden md:flex flex-col justify-between py-4'>
                     <div className='text-center'>
@@ -215,7 +221,8 @@ function GamePage() {
 
     return (
         <div className={"bg-black"}>
-            <div className='w-full bg-[url("/bgimagemobile.jpg")] md:bg-[url("/img/banner-game.jpg")] bg-cover h-[90vh]'>
+            <div
+                className='w-full bg-[url("/bgimagemobile.jpg")] md:bg-[url("/img/banner-game.jpg")] bg-cover h-[90vh]'>
                 <div className="container mx-auto">
                     <div className='flex py-5 justify-between'>
                         <div className='flex gap-3'>
