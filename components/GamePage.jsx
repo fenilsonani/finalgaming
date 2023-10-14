@@ -49,11 +49,33 @@ function GamePage() {
     const [dialogContent, setdialogContent] = React.useState("first");
     // Render the current question using the UI you provided
     const renderCurrentQuestion = () => (
-            <div className='bg-white flex justify-evenly'>
-                <div className='w-[3%] py-4'>
+            <div className='bg-white flex flex-col md:flex-row items-center justify-evenly'>
+                <div className='w-[3%] py-4 hidden md:block'>
                     <p>{currentQuestionIndex + 1}.</p>
                 </div>
-                <div className={'w-[68%] py-4'}>
+                <div className='w-full py-4 flex justify-between md:hidden'>
+                    <div className='text-4xl flex items-end font-bold'>
+                        <span>{currentQuestionIndex + 1}</span>
+                        <span
+                            className='text-xl'>/</span>
+                        <span className='text-base'>{
+                            data[0].questions.length
+                        }</span>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <p>
+                            <span className={"font-bold"}>
+                            {
+                                currentQuestionIndex + 1
+                            }</span> - Answered</p>
+                        <p>
+                            <span className={"font-bold"}>{
+                                currentQuestionIndex + 1
+                            }</span> - Questions
+                        </p>
+                    </div>
+                </div>
+                <div className={'md:w-[68%] w-full py-4'}>
                     <h3>{currentQuestion && currentQuestion.text}</h3>
                     {
                         currentQuestion.type === "shortAnswer" ?
@@ -124,7 +146,7 @@ function GamePage() {
                         }
                     </div>
                 </div>
-                <div className='w-[25%] border-l-2 flex flex-col justify-between py-4'>
+                <div className='w-[25%] border-l-2 hidden md:flex flex-col justify-between py-4'>
                     <div className='text-center'>
                         <h3 className='text-4xl font-bold'>{currentQuestionIndex + 1} <span
                             className='text-xl'>/</span><span className='text-[20px]'>{
