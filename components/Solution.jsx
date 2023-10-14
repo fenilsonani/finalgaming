@@ -22,7 +22,7 @@ function Solution() {
         ]
     )
     return (
-        <div className='w-full py-10'>
+        <div className='w-full py-10 bg-gray-100'>
             <div className="container mx-auto px-2 md:px-0">
                 <h2 className='text-center text-[#414141] text-2xl font-semibold py-2'>Modern Solutions we Provide</h2>
                 <p className='text-center font-thin'>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc

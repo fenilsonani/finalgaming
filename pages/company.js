@@ -14,27 +14,27 @@ const company = () => {
 
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    React.useEffect(() => {
-        // if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
-        //     alert("welcome to company page")
-        // } else {
-        //     window.location.href = "/"
-        // }
-        const cook = Cookies.get("pageAllowed")
-        const local = localStorage.getItem("pageAllowed")
-        console.log(cook)
-        console.log(local)
-        if (cook === "2" && local === "2") {
-            console.log("welcome to company page")
-        } else {
-            window.location.href = "/"
-        }
-    }, [])
+    // React.useEffect(() => {
+    //     // if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
+    //     //     alert("welcome to company page")
+    //     // } else {
+    //     //     window.location.href = "/"
+    //     // }
+    //     const cook = Cookies.get("pageAllowed")
+    //     const local = localStorage.getItem("pageAllowed")
+    //     console.log(cook)
+    //     console.log(local)
+    //     if (cook === "2" && local === "2") {
+    //         console.log("welcome to company page")
+    //     } else {
+    //         window.location.href = "/"
+    //     }
+    // }, [])
 
     return (
         <div>
             <Banner/>
-            <div className="mx-10">
+            <div className="mx-0 md:mx-10">
                 <Counter/>
                 <Truseted/>
                 <About_Us/>

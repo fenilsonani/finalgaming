@@ -5,7 +5,7 @@ function Truseted() {
     <div className='w-fullbg-[#f2f2f2] py-10 '>
       <div className="container mx-auto">
         <h2 className='text-center py-3 text-xl md:text-2xl font-bold'>60+ Trusted by Government Entites and  Steering Organiztions</h2>
-        <div className='flex justify-evenly py-5 w-full overflow-y-auto gap-10'>
+        <div className='flex justify-evenly bg-gray-100 py-5 w-full overflow-y-auto gap-10'>
            <img src="img/turested/asana.png" alt="asanalogo" />
            <img src="img/turested/ghost.png" alt="ghostlogo" />
            <img src="img/turested/plaid.png" alt="plaidlogo" />

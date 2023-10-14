@@ -2,7 +2,7 @@ import React from 'react'
 
 function Our_Motto() {
   return (
-    <div className='w-full py-10'>
+    <div className='w-full py-10 px-10'>
     <div className='container mx-auto px-2'>
     <div className='flex justify-evenly flex-wrap'>
     <div className='w-full md:w-[40%]'>
