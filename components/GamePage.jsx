@@ -187,9 +187,6 @@ function GamePage() {
 
     const renderCurrentQuestion = () => (
         <div className='bg-white flex flex-col md:flex-row items-center justify-evenly'>
-            <div className='w-[3%] py-4 hidden md:block'>
-                <p>{currentQuestionIndex + 1}.</p>
-            </div>
             <div className='w-full py-4 flex justify-between md:hidden'>
                 <div className='text-4xl flex items-end font-bold'>
                     <span>{currentQuestionIndex + 1}</span>
@@ -214,7 +211,9 @@ function GamePage() {
             </div>
             <div className={'w-[68%] py-4'}>
                 <h3>
-                    {currentQuestion && currentQuestionIndex + 1}.{" "}
+                    <span
+                        className={"font-bold"}
+                    >{currentQuestion && currentQuestionIndex + 1}.{" "}</span>
                     {currentQuestion && currentQuestion.text}
                 </h3>
                 {
