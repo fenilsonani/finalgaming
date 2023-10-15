@@ -222,7 +222,7 @@ function GamePage() {
     return (
         <div className={"bg-black"}>
             <div
-                className='w-full bg-[url("/bgimagemobile.jpg")] md:bg-[url("/img/banner-game.jpg")] bg-cover h-[90vh]'>
+                className='w-full bg-[url("/bgimagemobile.jpg")] md:bg-[url("/desktopbg.jpg")] bg-cover h-[110vh]'>
                 <div className="container mx-auto">
                     <div className='flex py-5 justify-between'>
                         <div className='flex gap-3'>
@@ -235,7 +235,7 @@ function GamePage() {
                             <img src="img/drop-down.png" alt="dropdown"/>
                         </div>
                     </div>
-                    <div className='flex h-[80vh] flex-col justify-between items-center py-5'>
+                    <div className='flex h-[100vh] flex-col justify-between items-center py-5'>
                         <img src="img/lets-be.png" alt="text-banner" className='mx-auto hidden md:block max-w-[100%]'/>
                         <img src="lets.svg" alt="text-banner" className=' self-start block md:hidden w-5/6'/>
                         <Dialog>
