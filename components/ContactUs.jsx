@@ -2,7 +2,7 @@ import React from 'react'
 import BannerTop from './BannerTop'
 import axios from "axios";
 
-function ContactUs() {
+function ContactUs({onSuccess}) {
 
     const [name, setName] = React.useState('')
     const [qualification, setQualification] = React.useState('')
@@ -30,7 +30,8 @@ function ContactUs() {
 
             console.log('Response:', response.data);
             alert("Form Submitted Successfully")
-            window.location.href = "/"
+            onSuccess()
+            // window.location.href = "/"
 
         } catch (e) {
             alert("Alert Occur While Submitting Form")

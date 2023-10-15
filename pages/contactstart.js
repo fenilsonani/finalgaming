@@ -6,11 +6,12 @@ const contactstart = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
-        // if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
-        //     alert("welcome to company page")
-        // } else {
-        //     window.location.href = "/"
-        // }
+        if (Cookies.get("pageAllowed") === "3" || localStorage.getItem("pageAllowed") === "3") {
+            alert("welcome to company page")
+        } else {
+            alert("you are not allowed to access this page")
+            window.location.href = "/"
+        }
         const cook = Cookies.get("pageAllowed")
         const local = localStorage.getItem("pageAllowed")
         console.log(cook)

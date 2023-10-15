@@ -7,7 +7,7 @@ import Our_Motto from "@/components/Our_Motto";
 import Workplace from "@/components/Workplace";
 import Review from "@/components/Review";
 import Footer from "@/components/Footer";
-import React,{useEffect} from "react";
+import React from "react";
 import Cookies from "js-cookie";
 
 const company = () => {
@@ -15,11 +15,12 @@ const company = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     React.useEffect(() => {
-        // if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
-        //     alert("welcome to company page")
-        // } else {
-        //     window.location.href = "/"
-        // }
+        if (Cookies.get("pageAllowed") === "2" && localStorage.getItem("pageAllowed") === "2") {
+            alert("welcome to company page")
+        } else {
+            window.location.href = "/"
+            alert("you are not allowed to access this page")
+        }
         const cook = Cookies.get("pageAllowed")
         const local = localStorage.getItem("pageAllowed")
         console.log(cook)

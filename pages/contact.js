@@ -7,11 +7,6 @@ const contact = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
-        // if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
-        //     alert("welcome to company page")
-        // } else {
-        //     window.location.href = "/"
-        // }
         const cook = Cookies.get("pageAllowed")
         const local = localStorage.getItem("pageAllowed")
         console.log(cook)
@@ -27,6 +22,20 @@ const contact = () => {
 
 
     const [error, setError] = useState(false);
+    const [success, setSuccess] = useState(false);
+
+    const handleSuccess = () => {
+        setSuccess(true)
+    }
+
+    if (success) {
+        return <div className={"flex flex-col items-center justify-center h-screen"}>
+            <img
+                src={"/success.svg"}
+            />
+            <h1 className={"text-4xl font-bold mt-5"}>Thank you for contacting us</h1>
+        </div>
+    }
 
     if (error) {
         return <ErrorPage/>
@@ -34,7 +43,9 @@ const contact = () => {
 
     return (
         <div>
-            <ContactUs/>
+            <ContactUs
+                onSuccess={handleSuccess}
+            />
         </div>
     )
 }
