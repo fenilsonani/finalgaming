@@ -8,7 +8,7 @@ function Banner() {
             <div className='opactiy-bg-dark'>
                 <div className='container  mx-auto'>
                     <Navbar/>
-                    <div className='h-[400px] flex flex-col justify-center items-center gap-4 max-w-[60%] mx-auto'>
+                    <div className='h-[80vh] flex flex-col justify-center items-center gap-4 max-w-[60%] mx-auto'>
                         <h2 className='text-white text-4xl text-center'>World-standard products without compromising
                             security</h2>
                         <p className='text-white font-thin'>Sorem ipsum dolor sit amet, consectetur adipiscing elit.
