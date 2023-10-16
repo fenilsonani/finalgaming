@@ -29,7 +29,7 @@ function Solution() {
                     vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
                     torquent.</p>
                 {/*center the boxes*/}
-                <div className='flex flex-col md:flex-row justify-center gap-5 md:gap-10 py-10'>ye
+                <div className='flex flex-col md:flex-row justify-center gap-5 md:gap-10 py-10'>
                     {
                         soultionData.map(
                             (data, index) => {

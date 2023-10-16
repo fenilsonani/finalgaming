@@ -45,7 +45,7 @@ function ContactUs({onSuccess}) {
         <>
             <BannerTop/>
             <div className='w-full py-10 bg-["img/contact_us_from.png"] bg-no-repeat bg-right-bottom bg-contain'>
-                <div className="container mx-auto px-2">
+                <div className="container md:px-52 mx-auto px-2">
                     {/*<All_From />*/}
                     <h1 className='text-3xl font-base text-center mb-10'>Please Fill out the details</h1>
                     <p className={"text-center text-sm font-thin mb-10"}>Lorem ipsum dolor sit amet, consectetur</p>
@@ -111,7 +111,7 @@ function ContactUs({onSuccess}) {
                         </div>
                     </div>
                     <button type="button"
-                            className={"border-black border-2 mx-10 py-2 px-10 rounded mt-5"}
+                            className={"border-black w-[200px] border-2 mx-10 py-2 px-10 rounded mt-5"}
                             onClick={() => {
                                 handleSubmit()
                             }}
