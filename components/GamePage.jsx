@@ -362,7 +362,7 @@ function GamePage() {
         <div className={"bg-black"}>
             <div
                 className='w-full bg-[url("/bgimagemobile.jpg")] md:bg-[url("/desktopbg.jpg")] bg-cover h-[110vh]'>
-                <div className={"flex justify-between py-3 px-5 bg-[#51504B]"}>
+                <div className={"flex justify-between py-3 px-5 bg-[#51504B] md:hidden"}>
                     <div className='flex gap-3'>
                         <img src="img/logo512.png" className="h-8 mr-3" alt="logo"/>
                         <h3 className="self-center tracking-[0.5rem]  text-sm font-semibold whitespace-nowrap text-white">CHIMERA</h3>
@@ -374,7 +374,7 @@ function GamePage() {
                     </div>
                 </div>
                 <div className="container mx-auto">
-                    <div className='flex py-5 hidden md:block justify-between'>
+                    <div className='md:flex py-5 hidden justify-between'>
                         <div className='flex gap-3'>
                             <img src="img/logo512.png" className="h-8 mr-3" alt="logo"/>
                             <h3 className="self-center tracking-[0.5rem]  text-sm font-semibold whitespace-nowrap text-white">CHIMERA</h3>

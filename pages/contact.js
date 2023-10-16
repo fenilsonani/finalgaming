@@ -6,19 +6,19 @@ import Cookies from "js-cookie";
 const contact = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    // useEffect(() => {
-    //     const cook = Cookies.get("pageAllowed")
-    //     const local = localStorage.getItem("pageAllowed")
-    //     console.log(cook)
-    //     console.log(local)
-    //     if (cook === "5" && local === "5") {
-    //         console.log("welcome to company page")
-    //     } else if (cook === "error" && local === "error") {
-    //         setError(true)
-    //     } else {
-    //         window.location.href = "/"
-    //     }
-    // }, [])
+    useEffect(() => {
+        const cook = Cookies.get("pageAllowed")
+        const local = localStorage.getItem("pageAllowed")
+        console.log(cook)
+        console.log(local)
+        if (cook === "5" && local === "5") {
+            console.log("welcome to company page")
+        } else if (cook === "error" && local === "error") {
+            setError(true)
+        } else {
+            window.location.href = "/"
+        }
+    }, [])
 
 
     const [error, setError] = useState(false);
