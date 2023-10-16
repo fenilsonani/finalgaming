@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,6 +29,12 @@
 .bg-seasion {
     background: url("/img/season-pass.png");
     background-size: cover;
+    @media screen and (max-width: 768px) {
+        background: url("/img/mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .bg-contactus {

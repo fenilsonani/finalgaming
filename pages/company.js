@@ -16,10 +16,12 @@ const company = () => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     React.useEffect(() => {
         if (Cookies.get("pageAllowed") === "2" && localStorage.getItem("pageAllowed") === "2") {
-            alert("welcome to company page")
+            // alert("welcome to company page")
+            console.log("welcome to company page")
         } else {
             window.location.href = "/"
-            alert("you are not allowed to access this page")
+            // alert("you are not allowed to access this page")
+            console.log("you are not allowed to access this page")
         }
         const cook = Cookies.get("pageAllowed")
         const local = localStorage.getItem("pageAllowed")

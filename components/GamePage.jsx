@@ -42,7 +42,8 @@ function GamePage() {
         if (correctPercentage >= 90) {
             await Cookies.set('pageAllowed', "2");
             await localStorage.setItem('pageAllowed', "2");
-            alert("You have answered 90% questions correctly. You can move to the next page.")
+            // alert("You have answered 90% questions correctly. You can move to the next page.")
+            console.log("You have answered 90% questions correctly. You can move to the next page.")
             window.location.href = "/company";
         } else {
             alert("You have not answered 90% questions correctly. Please try again.");
@@ -361,8 +362,19 @@ function GamePage() {
         <div className={"bg-black"}>
             <div
                 className='w-full bg-[url("/bgimagemobile.jpg")] md:bg-[url("/desktopbg.jpg")] bg-cover h-[110vh]'>
+                <div className={"flex justify-between py-3 px-5 bg-[#51504B]"}>
+                    <div className='flex gap-3'>
+                        <img src="img/logo512.png" className="h-8 mr-3" alt="logo"/>
+                        <h3 className="self-center tracking-[0.5rem]  text-sm font-semibold whitespace-nowrap text-white">CHIMERA</h3>
+                    </div>
+                    <div className='flex gap-2 md:gap-4 items-center'>
+                        <img src="img/global.png" alt="global"/>
+                        <h3 className='text-white text-sm'>ENGLISH (ASIA)</h3>
+                        <img src="img/drop-down.png" alt="dropdown"/>
+                    </div>
+                </div>
                 <div className="container mx-auto">
-                    <div className='flex py-5 justify-between'>
+                    <div className='flex py-5 hidden md:block justify-between'>
                         <div className='flex gap-3'>
                             <img src="img/logo512.png" className="h-8 mr-3" alt="logo"/>
                             <h3 className="self-center tracking-[0.5rem]  text-sm font-semibold whitespace-nowrap text-white">CHIMERA</h3>

@@ -53,10 +53,12 @@ function Hello() {
         if (correctPercentage >= 90) {
             await Cookies.set('pageAllowed', "4");
             await localStorage.setItem('pageAllowed', "4");
-            alert("You have answered 90% questions correctly. You can move to the next page.")
+            // alert("You have answered 90% questions correctly. You can move to the next page.")
+            console.log("You have answered 90% questions correctly. You can move to the next page.")
             window.location.href = "/contactsecond";
         } else {
-            alert("You have not answered 90% questions correctly. Please try again.");
+            // alert("You have not answered 90% questions correctly. Please try again.");
+            console.log("You have not answered 90% questions correctly. Please try again.");
         }
     };
     const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(0);

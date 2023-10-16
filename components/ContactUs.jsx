@@ -29,12 +29,14 @@ function ContactUs({onSuccess}) {
             });
 
             console.log('Response:', response.data);
-            alert("Form Submitted Successfully")
+            // alert("Form Submitted Successfully")
+            console.log("Form Submitted Successfully")
             onSuccess()
             // window.location.href = "/"
 
         } catch (e) {
-            alert("Alert Occur While Submitting Form")
+            // alert("Alert Occur While Submitting Form")
+            console.log("Alert Occur While Submitting Form")
             console.error(e)
         }
     }

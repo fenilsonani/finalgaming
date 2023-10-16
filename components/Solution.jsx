@@ -28,13 +28,15 @@ function Solution() {
                 <p className='text-center font-thin'>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                     vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
                     torquent.</p>
-                <div className='grid grid-cols-2 md:grid-cols-4 gap-5 py-5'>
+                {/*center the boxes*/}
+                <div className='flex flex-col md:flex-row justify-center gap-5 md:gap-10 py-10'>ye
                     {
                         soultionData.map(
                             (data, index) => {
                                 return (
-                                    <div className='w-full bg-white border-2 rounded py-5 px-2 mb-2 md:mb-0'
-                                         key={index}
+                                    <div
+                                        className='w-[350px] self-center bg-white border-2 rounded py-5 px-2 mb-2 md:mb-0 shadow-md'
+                                        key={index}
                                     >
                                         <img src={data.icon} alt={data.icon} className='mx-auto'/>
                                         <h3 className='text-center py-2'>{data.title}</h3>

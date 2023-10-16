@@ -7,9 +7,11 @@ const contactstart = () => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
         if (Cookies.get("pageAllowed") === "3" || localStorage.getItem("pageAllowed") === "3") {
-            alert("welcome to company page")
+            // alert("welcome to company page")
+            console.log("welcome to contact start page")
         } else {
-            alert("you are not allowed to access this page")
+            // alert("you are not allowed to access this page")
+            console.log("you are not allowed to access this page")
             window.location.href = "/"
         }
         const cook = Cookies.get("pageAllowed")
