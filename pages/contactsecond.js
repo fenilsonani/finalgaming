@@ -5,20 +5,20 @@ const contactsecond = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
-        // if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
-        //     alert("welcome to company page")
-        // } else {
-        //     window.location.href = "/"
-        // }
-        // const cook = Cookies.get("pageAllowed")
-        // const local = localStorage.getItem("pageAllowed")
-        // console.log(cook)
-        // console.log(local)
-        // if (cook === "4" && local === "4") {
-        //     console.log("welcome to contact start page")
-        // } else {
-        //     window.location.href = "/"
-        // }
+        if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
+            alert("welcome to company page")
+        } else {
+            window.location.href = "/"
+        }
+        const cook = Cookies.get("pageAllowed")
+        const local = localStorage.getItem("pageAllowed")
+        console.log(cook)
+        console.log(local)
+        if (cook === "4" && local === "4") {
+            console.log("welcome to contact start page")
+        } else {
+            window.location.href = "/"
+        }
     }, [])
 
     return (
