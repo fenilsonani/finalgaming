@@ -2,11 +2,11 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className='w-full bg-gradient-to-r from-black via-black  to-gray-700 py-10'>
+        <div className='w-full bg-gradient-to-rfrom-black via-black  to-gray-700 py-10'>
             <div className="container mx-auto px-4">
-                <div className='grid grid-cols-12 gap-10'>
+                <div className='grid grid-cols-12'>
                     <div className='w-full col-span-3'>
-                        <img src="img/ftr-loog.png" alt="logo" className='mx-auto max-w-[100%]'/>
+                        <img src="img/ftr-loog.png" alt="logo" className='mx-auto pr-4'/>
                     </div>
                     <div className='text-white w-full col-span-9'>
                         <div className='flex gap-20 py-2'>
