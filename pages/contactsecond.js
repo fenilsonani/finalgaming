@@ -5,7 +5,7 @@ const contactsecond = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
-        if (Cookies.get("pageAllowed") === 2 && localStorage.getItem("pageAllowed") === 2) {
+        if (Cookies.get("pageAllowed") === 2) {
             alert("welcome to company page")
         } else {
             window.location.href = "/"
@@ -33,7 +33,8 @@ const contactsecond = () => {
                             <h3 className='text-white mx-auto text-center text-4xl font-bold'>
                                 Last step to move forward.
                             </h3>
-                            <p className='text-white mt-10 font-thin py-2 text-center'>Select one pill to reach destination
+                            <p className='text-white mt-10 font-thin py-2 text-center'>Select one pill to reach
+                                destination
                                 point</p>
                             <div className='flex mt-10'>
                                 <button type="button"

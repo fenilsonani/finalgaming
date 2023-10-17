@@ -15,7 +15,7 @@ const company = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     React.useEffect(() => {
-        if (Cookies.get("pageAllowed") === "2" && localStorage.getItem("pageAllowed") === "2") {
+        if (Cookies.get("pageAllowed") === "2") {
             // alert("welcome to company page")
             console.log("welcome to company page")
         } else {

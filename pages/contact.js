@@ -11,7 +11,7 @@ const contact = () => {
         const local = localStorage.getItem("pageAllowed")
         console.log(cook)
         console.log(local)
-        if (cook === "5" && local === "5") {
+        if (cook === "5") {
             console.log("welcome to company page")
         } else if (cook === "error" && local === "error") {
             setError(true)
