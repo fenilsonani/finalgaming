@@ -27,8 +27,8 @@ function Banner() {
                             Know More
                         </button>
                     </div>
-                    <div className={"flex flex-col md:hidden gap-20 mt-20"}>
-                        <h2 className='text-white text-4xl text-left'>World-standard products without
+                    <div className={"flex flex-col md:hidden gap-24 mt-20"}>
+                        <h2 className='text-white text-5xl text-left'>World-standard products without
                             compromising
                             security</h2>
                         <p className='text-white font-thin text-2xl md:px-32 text-left'>Sorem ipsum dolor sit amet,
