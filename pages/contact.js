@@ -2,21 +2,25 @@ import ContactUs from "@/components/ContactUs";
 import {useEffect, useState} from "react";
 import ErrorPage from "@/components/ErrorPage";
 import Cookies from "js-cookie";
+import toast from "react-hot-toast";
+import {useRouter} from "next/router";
 
 const contact = () => {
-
+    const router = useRouter()
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
         const cook = Cookies.get("pageAllowed")
-        const local = localStorage.getItem("pageAllowed")
         console.log(cook)
-        console.log(local)
         if (cook === "5") {
             console.log("welcome to company page")
-        } else if (cook === "error" && local === "error") {
+            toast.success("Welcome to contact page")
+        } else if (cook === "error") {
+            toast.error("Error Occurred")
             setError(true)
         } else {
-            window.location.href = "/"
+            toast.error("You are not allowed to access this page")
+            // window.location.href = "/"
+            router.push("/")
         }
     }, [])
 

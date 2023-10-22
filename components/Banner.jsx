@@ -1,8 +1,12 @@
 import React from 'react'
 import Navbar from "@/components/Core/Navbar";
 import Cookies from "js-cookie";
+import {useRouter} from "next/router";
 
 function Banner() {
+
+    const router = useRouter();
+
     return (
         <div className='w-full bg-main-baner'>
             <div className='opactiy-bg-dark'>
@@ -18,10 +22,10 @@ function Banner() {
                             Nunc vulputate libero et velit interdum,</p>
                         <button type="button"
                                 className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium  focus:outline-none text-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-                                onClick={() => {
-                                    Cookies.set("pageAllowed", "3");
-                                    localStorage.setItem("pageAllowed", "3");
-                                    window.location.href = "/contactstart";
+                                onClick={async () => {
+                                    await Cookies.set("pageAllowed", "3");
+                                    // window.location.href = "/contactstart";
+                                    await router.push("/contactstart");
                                 }}
                         >
                             Know More
@@ -40,7 +44,8 @@ function Banner() {
                                 <p className={"text-white ml-5 text-base"}>
                                     Potential world class Employees
                                 </p>
-                            </div><div className={"flex flex-col items-center border-l-2"}>
+                            </div>
+                            <div className={"flex flex-col items-center border-l-2"}>
                                 <h1 className={"text-white text-3xl"}>40+</h1>
                                 <p className={"text-white ml-5 text-base"}>
                                     Projects delivered at good Quality

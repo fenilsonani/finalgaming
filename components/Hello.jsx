@@ -2,11 +2,14 @@ import React, {useEffect} from 'react'
 import Cookies from "js-cookie";
 import axios from "axios";
 import {Dialog, DialogContent, DialogTrigger} from "@/components/ui/dialog";
+import toast from "react-hot-toast";
+import {useRouter} from "next/router";
 
 function Hello() {
 
     const [data, setData] = React.useState([{questions: []}]);
     const [userAnswers, setUserAnswers] = React.useState({});
+    const router = useRouter();
 
     useEffect(() => {
         setdialogContent("first")
@@ -52,10 +55,11 @@ function Hello() {
         console.log("correctPercentage", correctPercentage);
         if (correctPercentage >= 90) {
             await Cookies.set('pageAllowed', "4");
-            await localStorage.setItem('pageAllowed', "4");
             // alert("You have answered 90% questions correctly. You can move to the next page.")
             console.log("You have answered 90% questions correctly. You can move to the next page.")
-            window.location.href = "/contactsecond";
+            // window.location.href = "/contactsecond";
+            await router.push("/contactsecond");
+            toast.success("You have answered 90% questions correctly. You can move to the next page.")
         } else {
             // alert("You have not answered 90% questions correctly. Please try again.");
             console.log("You have not answered 90% questions correctly. Please try again.");

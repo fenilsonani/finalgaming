@@ -9,28 +9,25 @@ import Review from "@/components/Review";
 import Footer from "@/components/Footer";
 import React from "react";
 import Cookies from "js-cookie";
+import {useRouter} from "next/router";
+import toast from "react-hot-toast";
 
 const company = () => {
-
+    const router = useRouter()
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     React.useEffect(() => {
         if (Cookies.get("pageAllowed") === "2") {
             // alert("welcome to company page")
             console.log("welcome to company page")
+            toast.success("Welcome to company page")
+
         } else {
-            window.location.href = "/"
+            // window.location.href = "/"
+            router.push("/")
+            toast.error("You are not allowed to access this page")
             // alert("you are not allowed to access this page")
             console.log("you are not allowed to access this page")
-        }
-        const cook = Cookies.get("pageAllowed")
-        const local = localStorage.getItem("pageAllowed")
-        console.log(cook)
-        console.log(local)
-        if (cook === "2" && local === "2") {
-            console.log("welcome to company page")
-        } else {
-            window.location.href = "/"
         }
     }, [])
 

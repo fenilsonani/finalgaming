@@ -7,9 +7,11 @@ import {Dialog, DialogContent, DialogTrigger} from "@/components/ui/dialog";
 import axios from "axios";
 import Cookies from "js-cookie";
 import Footer from "@/components/Footer";
+import toast from "react-hot-toast";
+import {useRouter} from "next/router";
 
 function GamePage() {
-
+    const router = useRouter()
     const [data, setData] = React.useState([{questions: []}]);
     const [userAnswers, setUserAnswers] = React.useState({});
     const checkAnswers = async () => {
@@ -41,10 +43,11 @@ function GamePage() {
         let correctPercentage = (correctAnswers / correctAnswers + wrongAnswers + notAnswered) * 100;
         if (correctPercentage >= 90) {
             await Cookies.set('pageAllowed', "2");
-            await localStorage.setItem('pageAllowed', "2");
+            toast.success("You have answered 90% questions correctly. You can move to the next page.");
             // alert("You have answered 90% questions correctly. You can move to the next page.")
             console.log("You have answered 90% questions correctly. You can move to the next page.")
-            window.location.href = "/company";
+            // window.location.href = "/company";
+            router.push("/company");
         } else {
             alert("You have not answered 90% questions correctly. Please try again.");
         }

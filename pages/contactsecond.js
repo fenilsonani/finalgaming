@@ -1,23 +1,21 @@
 import React, {useEffect} from "react";
 import Cookies from "js-cookie";
+import toast from "react-hot-toast";
+import {useRouter} from "next/router";
 
 const contactsecond = () => {
 
+    const router = useRouter()
+
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
-        if (Cookies.get("pageAllowed") === 2) {
-            alert("welcome to company page")
+        if (Cookies.get("pageAllowed") === "4") {
+            // alert("welcome to company page")
+            toast.success("Welcome to contact second page")
         } else {
-            window.location.href = "/"
-        }
-        const cook = Cookies.get("pageAllowed")
-        const local = localStorage.getItem("pageAllowed")
-        console.log(cook)
-        console.log(local)
-        if (cook === "4" && local === "4") {
-            console.log("welcome to contact start page")
-        } else {
-            window.location.href = "/"
+            // window.location.href = "/"
+            toast.error("You are not allowed to access this page")
+            router.push("/")
         }
     }, [])
 
@@ -40,9 +38,9 @@ const contactsecond = () => {
                                 <button type="button"
                                         className="py-2.5 block mx-auto  px-5 text-sm font-medium bg-[#FF0000] text-white focus:outline-none  rounded-full   focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                                         onClick={() => {
-                                            localStorage.setItem("pageAllowed", "5")
                                             Cookies.set("pageAllowed", "5")
-                                            window.location.href = "/contact"
+                                            // window.location.href = "/contact"
+                                            router.push("/contact")
                                         }}
                                 >
                                     Red Pill
@@ -51,9 +49,9 @@ const contactsecond = () => {
                                 <button type="button"
                                         className="py-2.5 block mx-auto  px-5 text-sm font-medium bg-[#000AFF] text-white focus:outline-none  rounded-full  focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                                         onClick={() => {
-                                            localStorage.setItem("pageAllowed", "error")
                                             Cookies.set("pageAllowed", "error")
-                                            window.location.href = "/contact"
+                                            // window.location.href = "/contact"
+                                            router.push("/contact")
                                         }}
                                 >Start
                                     Blue Pill
